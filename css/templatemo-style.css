@@ -509,8 +509,8 @@ a#logo {
 }
 .count-number, .counted {
   display:block;
-  font-size:15px;
-  font-weight:bold;
+  font-size:30px;
+  /*font-weight:700;*/
   line-height:1;
   margin-bottom:10px;
 }
