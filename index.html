@@ -83,6 +83,30 @@ atribuir video fondo a NewHumanDesigns!!
             });
         </script>
 
+        <script>
+            function mostrarImagenAmpliada(rutaImagen) {
+                // Crea un elemento de modal
+                var modal = document.createElement('div');
+                modal.className = 'modal';
+
+                // Crea la imagen ampliada
+                var imagenAmpliada = document.createElement('img');
+                imagenAmpliada.src = rutaImagen;
+                imagenAmpliada.alt = 'Imagen ampliada';
+
+                // Añade la imagen al modal
+                modal.appendChild(imagenAmpliada);
+
+                // Añade el modal al cuerpo del documento
+                document.body.appendChild(modal);
+
+                // Cierra el modal cuando se hace clic en él
+                modal.addEventListener('click', function () {
+                    document.body.removeChild(modal);
+                });
+            }
+        </script>
+
         <div id="fullpage" class="fullpage-default">
 
             <div class="section animated-row" data-section="slide01">
@@ -221,29 +245,6 @@ atribuir video fondo a NewHumanDesigns!!
                                         <p>Please tell your friends about it. Templatemo is the best website to download free Bootstrap CSS templates.</p>
                                     </div>
                                 </div-->
-                                <script>
-                                    function mostrarImagenAmpliada(rutaImagen) {
-                                        // Crea un elemento de modal
-                                        var modal = document.createElement('div');
-                                        modal.className = 'modal';
-                                
-                                        // Crea la imagen ampliada
-                                        var imagenAmpliada = document.createElement('img');
-                                        imagenAmpliada.src = rutaImagen;
-                                        imagenAmpliada.alt = 'Imagen ampliada';
-                                
-                                        // Añade la imagen al modal
-                                        modal.appendChild(imagenAmpliada);
-                                
-                                        // Añade el modal al cuerpo del documento
-                                        document.body.appendChild(modal);
-                                
-                                        // Cierra el modal cuando se hace clic en él
-                                        modal.addEventListener('click', function () {
-                                            document.body.removeChild(modal);
-                                        });
-                                    }
-                                </script>
                                 
                             </div>
                             <div class="facts-list owl-carousel">
