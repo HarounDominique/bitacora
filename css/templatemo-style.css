@@ -510,7 +510,7 @@ a#logo {
 .count-number, .counted {
   display:block;
   font-size:15px;
-  font-weight:700;
+  font-weight:bold;
   line-height:1;
   margin-bottom:10px;
 }
