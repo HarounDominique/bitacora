@@ -233,8 +233,20 @@ atribuir video fondo a NewHumanDesigns!!
                                 <h2>Experiencia y certificaciones</h2>
                             </div>
                             <div class="item animate" data-animate="fadeInUp">
-                                <a href="#" onclick="mostrarImagenAmpliada('images/cv.jpg')">
-                                    <img src="images/cv.jpg" alt="" style="max-width: 40%;">
+                                <style>
+                                    .myCV img {
+                                        max-width: 100%; /* Valor predeterminado para pantallas más pequeñas */
+                                    }
+                                
+                                    @media (min-width: 768px) {
+                                        .myCV img {
+                                            max-width: 40%; /* Cambia a 40% en pantallas más grandes (por ejemplo, dispositivos de escritorio) */
+                                        }
+                                    }
+                                </style>
+
+                                <a href="#" onclick="mostrarImagenAmpliada('images/cv.jpg')" class="myCV">
+                                    <img src="images/cv.jpg" alt="">
                                 </a>
                                 <!--div class="portfolio-item">
                                     <div class="thumb">
