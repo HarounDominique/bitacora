@@ -28,9 +28,9 @@
 		font-size:18px;
 	}
 	.wide-col-laptop {
-		-ms-flex: 0 0 100%;
-		flex: 0 0 100%;
-		max-width: 100%;
+		-ms-flex: 0 0 85%;
+		flex: 0 0 85%;
+		max-width: 85%;
 	}
 	.service-box h3 {
 		font-size:18px;
